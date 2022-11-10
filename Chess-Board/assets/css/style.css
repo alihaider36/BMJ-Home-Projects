@@ -3,6 +3,7 @@
     --black: hsl(0, 0%, 0%);
     --white: hsl(0, 0%, 100%);
     --bg: hsl(0, 0%, 87%);
+    --bg-two: hsl(260, 10%, 12%);
     --body-width: 140rem;
     --square-w-h: clamp(3.7rem, 2.9411764705882355rem + 2.5294117647058822vw, 8rem);
 }
@@ -18,17 +19,66 @@ body {
     background-color: var(--bg);
     font-family: 'Righteous', cursive;
 }
+/* header */
+.header {
+    width: 100%;
+    padding-inline: 4rem;
+    padding-block: 3rem;
+    background-color: var(--black);
+    border-block-end: 1rem solid var(--white);
+}
+:is(.navbar, .navbar-ul, section.hero-sec) {
+    display: flex;
+}
+.navbar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-ul {
+    gap: 2rem;
+    text-align: end;
+}
+.navbar-ul .navbar-li {
+    list-style: none;
+}
+.navbar-ul .navbar-li .navbar-link {
+    color: var(--white);
+    font-size: 2rem;
+    text-decoration: none;
+}
+section.hero-sec {
+    background-color: var(--black);
+    color: var(--white);
+    text-transform: uppercase;
+    height: 100vh;
+    padding-block: auto;
+    align-items: center;
+
+}
+.hero-content-wrapper {
+    width: var(--body-width);
+    margin-inline: auto;
+    padding-inline: 3rem;
+}
+h1.hero-heading {
+    font-size: clamp(7rem, 5.764705882352941rem + 4.117647058823529vw, 14rem);
+}
+h2.hero-subheading {
+    font-size: clamp(0.8rem, 0.6941176470588236rem + 0.35294117647058815vw, 1.4rem);
+    font-weight: 100;
+}
 .container {
     height: 100vh;
     width: 100vw;
+}
+.text-center {
+    text-align: center;
 }
 :is(.black-chess-icon, .white-chess-icon, .main-sec) {
     display: grid;
     place-items: center;
 }
-/* .table-caption, .tabel-heading-row {
-    display: none;
-} */
 .square {
     width: var(--square-w-h);
     height: var(--square-w-h);
@@ -52,17 +102,22 @@ body {
 }
 .table-foot-cell, .th-col-letter, .tabel-heading, .th-col-num {
     font-size: 1.6rem;
-    /* border: 0rem; */
     text-align: center;
 }
-/* .white-chess-icon, .black-chess-icon {
-    font-size: 4rem;
+.chess-board-container .chess-board-row, .chess-header-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, var(--square-w-h));
 }
-.white-chess-icon {
-    color: var(--white);
-    border: .2rem solid var(--black);
+.black-box {
+    background-color: var(--black);
 }
-.black-chess-icon {
-    color: var(--black);
-    border: .2rem solid var(--white);
-} */
+.white-box {
+    background-color: var(--white);
+}
+.chess-board-container {
+    border: 0.6rem solid var(--black);
+    padding: 0.2rem;
+}
+.div-table-wrapper {
+    height: 100vh;
+}

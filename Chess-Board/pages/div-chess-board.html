@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Favicon Goes Here -->
+    <link rel="shortcut icon" href="/Chess-Board/assets/img/chess.jpg" type="image/x-icon">
+    <!-- Style Goes Here -->
+    <link rel="stylesheet" href="/Chess-Board/assets/css/style.css">
+    <!-- Fonts Goes Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Website Title Goes Here -->
+    <title>Chess Board Using Div</title>
+</head>
+<body>
+    <!--  Success Full Attempt main.main>section.div-table-wrapper>article.chess-board-container>(div.chess-board-row*4>(div.black-box)+(div.white-box))+(div.chess-board-row*4>(div.black-box)+(div.white-box))*4 -->
+
+        <!-- main.main>section.div-table-wrapper>div.chess-board-container>(div.chess-board-row*4>((article.black-box.square)+(article.white-box.square))*4)+(div.chess-board-row*4>((article.black-box.square)+(article.white-box.square))*4) -->
+
+        <!-- main.main>section.div-table-wrapper>div.chess-board-container>(div.chess-board-row*8>((article.black-box.square)+(article.white-box.square))*4) -->
+        <!-- main.main>section.div-table-wrapper>div.chess-board-container>((article.black-box.square)+(article.white-box.square))+((article.black-box.square)+(article.white-box.square))*64 -->
+
+        <!-- Successful Attempt Using Div main.main>section.div-table-wrapper>div.chess-board-container>((div.chess-board-row>((article.black-box.square)+(article.white-box.square))*4)+(div.chess-board-row>((article.white-box.square)+(article.black-box.square))*4))*4 -->
+
+    <header class="header">
+        <nav class="navbar">
+            <img src="/Chess-Board/assets/img/chess.jpg" alt="Logo for website" width="40" height="40" class="logo">
+            <ul class="navbar-ul">
+                <li class="navbar-li"><a href="/Chess-Board/pages/div-chess-board.html" class="navbar-link" target="_blank">Div</a></li>
+                <li class="navbar-li"><a href="/Chess-Board/pages/table-chess-board.html" class="navbar-link" target="_blank">Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="div-table-wrapper main-sec">
+            <h1 class="table-caption text-center">Div Chess Board</h1>
+            <div class="chess-board-container">
+                <div class="chess-board-row">
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9820</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9822</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9821</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9819</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9818</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9821</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9822</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9820</span></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="white-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                    <article class="black-box square"><span class="chess-icon white-chess-icon">&#9823</span></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                    <article class="white-box square"></article>
+                    <article class="black-box square"></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9817</span></article>
+                </div>
+                <div class="chess-board-row">
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9814</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9816</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9815</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9813</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9812</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9815</span></article>
+                    <article class="white-box square"><span class="chess-icon black-chess-icon">&#9816</span></article>
+                    <article class="black-box square"><span class="chess-icon black-chess-icon">&#9814</span></article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
