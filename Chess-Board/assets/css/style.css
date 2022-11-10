@@ -1,0 +1,68 @@
+:root {
+    --font-size: 62.5%;
+    --black: hsl(0, 0%, 0%);
+    --white: hsl(0, 0%, 100%);
+    --bg: hsl(0, 0%, 87%);
+    --body-width: 140rem;
+    --square-w-h: clamp(3.7rem, 2.9411764705882355rem + 2.5294117647058822vw, 8rem);
+}
+*, *::before, ::after {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+html {
+    font-size: var(--font-size);
+}
+body {
+    background-color: var(--bg);
+    font-family: 'Righteous', cursive;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+:is(.black-chess-icon, .white-chess-icon, .main-sec) {
+    display: grid;
+    place-items: center;
+}
+/* .table-caption, .tabel-heading-row {
+    display: none;
+} */
+.square {
+    width: var(--square-w-h);
+    height: var(--square-w-h);
+}
+.black {
+    background-color: var(--black);
+}
+.white {
+    background-color: var(--white);
+}
+.white-chess-icon, .black-chess-icon {
+    mix-blend-mode: difference;
+    font-size: 4rem;
+    color: var(--white);
+}
+.table-caption {
+    font-size: clamp(3rem, 2.4705882352941178rem + 1.7647058823529411vw, 6rem);
+}
+.th-col-letter, .th-col-num {
+    writing-mode: vertical-rl;
+}
+.table-foot-cell, .th-col-letter, .tabel-heading, .th-col-num {
+    font-size: 1.6rem;
+    /* border: 0rem; */
+    text-align: center;
+}
+/* .white-chess-icon, .black-chess-icon {
+    font-size: 4rem;
+}
+.white-chess-icon {
+    color: var(--white);
+    border: .2rem solid var(--black);
+}
+.black-chess-icon {
+    color: var(--black);
+    border: .2rem solid var(--white);
+} */

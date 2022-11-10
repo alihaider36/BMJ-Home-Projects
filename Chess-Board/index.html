@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Style Goes Here -->
+    <link rel="stylesheet" href="/Chess-Board/assets/css/style.css">
+    <!-- Fonts Goes Here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <!-- Website Title Goes Here -->
+    <title>Chess Board</title>
+</head>
+<body>
+    
+    <!-- <section class="container">
+        <table class="table">
+            <caption class="table-caption"></caption>
+            <thead class="thead">
+                <tr class="tabel-heading-row">
+                    <th class="table-heading">1</th>
+                    <th class="table-heading">2</th>
+                    <th class="table-heading">3</th>
+                    <th class="table-heading">4</th>
+                    <th class="table-heading">5</th>
+                    <th class="table-heading">6</th>
+                    <th class="table-heading">7</th>
+                    <th class="table-heading">8</th>
+                </tr>
+            </thead>
+
+            Emmet Codes
+            tbody.tbody>(tr.table-body-row*4>(td.square.table-body-cell.black)+(td.square.table-body-cell.white))+(tr.table-body-row*4>(td.square.table-body-cell.white)+(td.square.table-body-cell.black))
+            tbody.tbody>(tr.table-body-row*4>(td.square.table-body-cell.black)+(td.square.table-body-cell.white)+(td.square.table-body-cell.black)+(td.square.table-body-cell.white))+(tr.table-body-row*4>(td.square.table-body-cell.black)+(td.square.table-body-cell.white)+(td.square.table-body-cell.black)+(td.square.table-body-cell.white))
+            CLOSSEST ONE SO FAR tbody.tbody>(tr.table-body-row*4>(td.square.table-body-cell.black+td.square.table-body-cell.white)*4)+(tr.table-body-row*4>(td.square.table-body-cell.white+td.square.table-body-cell.black)*4)
+
+            SUCCESSFUL ATTEMPT tbody.tbody>((tr.table-body-row>(td.square.table-body-cell.black+td.square.table-body-cell.white)*4)+(tr.table-body-row>(td.square.table-body-cell.white+td.square.table-body-cell.black)*4))*4
+
+            
+         </table>
+    </section> -->
+
+
+
+
+   <!-- Website Use for html icon codes 
+    https://www.alt-codes.net/chess-symbols.php
+
+    Example Image image 
+    <img src="/Chess-Board/assets/img/chess.jpg" alt="Example Image" srcset="">-->
+
+
+    <section class="container main-sec">
+        <table class="table" border="4">
+            <caption class="table-caption">Chess Board</caption>
+            <thead class="thead">
+                <tr class="tabel-heading-row">
+                    <th class="tabel-heading" scope="row" colspan="2">1</th>
+                    <th class="tabel-heading" scope="row">2</th>
+                    <th class="tabel-heading" scope="row">3</th>
+                    <th class="tabel-heading" scope="row">4</th>
+                    <th class="tabel-heading" scope="row">5</th>
+                    <th class="tabel-heading" scope="row">6</th>
+                    <th class="tabel-heading" scope="row">7</th>
+                    <th class="tabel-heading" scope="row" colspan="2">8</th>
+                </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">1</th>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9820</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9822</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9821</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9819</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9818</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9821</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9822</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9820</span></td>
+                    <th scope="col" class="th-col-letter">a</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">2</th>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon white-chess-icon">&#9823</span></td>
+                    <th scope="col" class="th-col-letter">b</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">3</th>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <th scope="col" class="th-col-letter">c</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">4</th>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <th scope="col" class="th-col-letter">d</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">5</th>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <th scope="col" class="th-col-letter">e</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">6</th>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <td class="square table-body-cell white"></td>
+                    <td class="square table-body-cell black"></td>
+                    <th scope="col" class="th-col-letter">f</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">7</th>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9817</span></td>
+                    <th scope="col" class="th-col-letter">g</th>
+                </tr>
+                <tr class="table-body-row">
+                    <th scope="col" class="th-col-num">8</th>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9814</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9816</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9815</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9813</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9812</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9815</span></td>
+                    <td class="square table-body-cell white"><span class="chess-icon black-chess-icon">&#9816</span></td>
+                    <td class="square table-body-cell black"><span class="chess-icon black-chess-icon">&#9814</span></td>
+                    <th scope="col" class="th-col-letter">h</th>
+                </tr>
+            </tbody>
+            <tfoot class="tfoot">
+                <tr class="tfoot-row">
+                    <td class="table-foot-cell" colspan="2">a</td>
+                    <td class="table-foot-cell">b</td>
+                    <td class="table-foot-cell">c</td>
+                    <td class="table-foot-cell">d</td>
+                    <td class="table-foot-cell">e</td>
+                    <td class="table-foot-cell">f</td>
+                    <td class="table-foot-cell">g</td>
+                    <td class="table-foot-cell" colspan="2">h</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <!-- Scripts Goes Here -->
+    <script src="/Chess-Board/assets/js/main.js"></script>
+</body>
+</html>
