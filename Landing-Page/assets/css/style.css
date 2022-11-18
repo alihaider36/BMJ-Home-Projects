@@ -1,0 +1,70 @@
+*, *::before, *::after {
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 62.5%;
+    --primary: #080708;
+    --secondary: #3772ff;
+    --accent: #df2935;
+    --base: #fdca40;
+    --base-shade: #e6e8e6;
+    --site-width: 140rem;
+}
+html {
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+}
+body {
+    background-color: var(--base-shade);
+}
+/* -- Utility Classes -- */
+.flex {
+    display: flex;
+}
+.container {
+    width: var(--site-width);
+    margin-inline: auto;
+}
+/* -- Header -- */
+.header {
+    background-color: var(--base);
+}
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    padding-block: 1.6rem;
+    margin: 0 auto;
+}
+.navbar-menu__wrapper > .navbar-menu__ul {
+    align-content: center;
+}
+.navbar-menu__ul .navbar-menu__li {
+    list-style: none;
+    padding-inline: 2rem;
+}
+.navbar-menu__ul .navbar-menu__li .navbar-menu__link {
+    color: var(--primary);
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    font-weight: 700;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.navbar-menu__ul .navbar-menu__li .navbar-menu__link:hover {
+    color: var(--accent);
+    border-block-start: .2rem solid var(--accent);
+}
+/* -- Hero Section */
+.hero-section {
+    padding-block: 4rem;
+    background-color: var(--secondary);
+    background-image: url(/Landing-Page/assets/img/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
